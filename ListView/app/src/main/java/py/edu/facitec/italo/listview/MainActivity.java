@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -52,5 +54,8 @@ private ListView listView;
         });
 
 
+        MyAdapter myAdapter = new MyAdapter(this, R.layout.list_item, names);
+        listView.setAdapter(myAdapter);
     }
 }
+

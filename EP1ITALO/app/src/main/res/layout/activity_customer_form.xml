@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustomerFormActivity">
+
+
+  <EditText
+      android:id="@+id/editTextTextName"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:layout_margin="24dp"
+      android:ems="10"
+      android:hint="@string/name"
+      android:inputType="textPersonName"
+      android:autofillHints="" />
+
+  <EditText
+      android:id="@+id/editTextTextEmail"
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:layout_margin="24dp"
+      android:ems="10"
+      android:hint="@string/email"
+      android:inputType="textEmailAddress"
+      android:autofillHints="" />
+
+  <Button
+      android:id="@+id/buttonSave"
+      style="@style/Widget.AppCompat.Button.Colored"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:padding="16dp"
+      android:text="@string/save"
+      android:onClick="saveCustomer"/>
+
+</LinearLayout>

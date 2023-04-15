@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EP1ITALO</string>
+    <string name="newCustomer">newCustomer</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="add">add</string>
+</resources>

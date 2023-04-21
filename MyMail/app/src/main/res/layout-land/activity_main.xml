@@ -6,17 +6,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".Activities.MainActivity">
+    tools:context=".Activities.MainActivity"
+    android:baselineAligned="false">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/dataFragment"
         android:name="py.edu.facitec.mymail.Fragments.DataFragment"
-        android:layout_width="0dp"
+        android:layout_width="342dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_data" />
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/detailsFragment"
         android:name="py.edu.facitec.mymail.Fragments.DetailsFragment"
         android:layout_width="0dp"

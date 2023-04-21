@@ -1,18 +1,24 @@
 package py.edu.facitec.mymail.Activities;
 
-import androidx.fragment.app.FragmentActivity;
+
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.Serializable;
 
 import py.edu.facitec.mymail.Fragments.DataFragment;
 import py.edu.facitec.mymail.Fragments.DetailsFragment;
 import py.edu.facitec.mymail.Models.Email;
 import py.edu.facitec.mymail.R;
 
-public class MainActivity extends FragmentActivity implements DataFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements DataFragment.OnFragmentInteractionListener {
 
     DetailsFragment detailFragment;
+
+    private boolean isMultiPanel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +30,14 @@ public class MainActivity extends FragmentActivity implements DataFragment.OnFra
         detailFragment = (DetailsFragment) getSupportFragmentManager().findFragmentById(R.id.detailsFragment);
     }
 
-
-    @Override
     public void onFragmentInteraction(Email email) {
         if(detailFragment!=null){
-            detailFragment.render(email);
+        detailFragment.render(email);
         }else{
             Intent i = new Intent(this, DetailsActivity.class);
-            i.putExtra("email",email);
+            i.putExtra("subject", email.getSubject());
+              i.putExtra("message", email.getMessage());
+              i.putExtra("senderName", email.getSender());
             startActivity(i);
         }
     }
@@ -39,8 +45,4 @@ public class MainActivity extends FragmentActivity implements DataFragment.OnFra
         isMultiPanel = (getSupportFragmentManager().findFragmentById(R.id.detailsFragment) != null);
     }
 
-    @Override
-    public void onPointerCaptureChanged(boolean hasCapture) {
-        super.onPointerCaptureChanged(hasCapture);
-    }
 }

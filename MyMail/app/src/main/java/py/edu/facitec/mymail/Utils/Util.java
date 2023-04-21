@@ -12,7 +12,7 @@ public class Util {
             "03a9f4","009688","4caf50"};
 
     public static String getRandomColor(){
-        return colors[new Random().nextInt(colors.length)+0];
+        return "#"+ colors[new Random().nextInt(colors.length)+0];
     }
 
     public static List<Email> getDummyData(){

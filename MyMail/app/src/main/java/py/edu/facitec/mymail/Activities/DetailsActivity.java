@@ -16,7 +16,10 @@ public class DetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_details);
 
         if(getIntent().getExtras()!=null){
-            Email email = (Email) getIntent().getExtras().getSerializable("email");
+            Email email = new Email();
+            email.setSubject(getIntent().getStringExtra("subject"));
+            email.setSender(getIntent().getStringExtra("senderName"));
+            email.setMessage(getIntent().getStringExtra("message"));
             DetailsFragment detailFragment= (DetailsFragment)getSupportFragmentManager().findFragmentById(R.id.detailsFragment);
             detailFragment.render(email);
         }

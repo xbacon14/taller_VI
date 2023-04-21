@@ -11,17 +11,17 @@
     <fragment
         android:id="@+id/dataFragment"
         android:name="py.edu.facitec.mymail.Fragments.DataFragment"
-        android:layout_width="0dp"
+        android:layout_width="60dp"
         android:layout_height="match_parent"
-        android:layout_weight="35"
-        tools:layout="@layout/fragment_data" />
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_data"/>
 
     <fragment
         android:id="@+id/detailsFragment"
         android:name="py.edu.facitec.mymail.Fragments.DetailsFragment"
-        android:layout_width="0dp"
+        android:layout_width="40dp"
         android:layout_height="match_parent"
-        android:layout_weight="65"
-        tools:layout="@layout/fragment_details" />
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_details"/>
 
 </LinearLayout>

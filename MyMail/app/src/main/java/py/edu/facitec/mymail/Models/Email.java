@@ -2,6 +2,8 @@ package py.edu.facitec.mymail.Models;
 
 import java.util.Date;
 
+import py.edu.facitec.mymail.Utils.Util;
+
 public class Email {
 
     private String subject;
@@ -13,7 +15,17 @@ public class Email {
         this.subject = subject;
         this.sender = sender;
         this.message = message;
-        this.color = color;
+        this.color = Util.getRandomColor();
+    }
+
+    public Email(String subject, String message, String sender) {
+        this.subject=subject;
+        this.message = message;
+        this.sender=sender;
+    }
+
+    public Email() {
+
     }
 
     public String getSubject() {

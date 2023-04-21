@@ -13,7 +13,7 @@
         android:name="py.edu.facitec.mymail.Fragments.DataFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="6"
         tools:layout="@layout/fragment_data" />
 
     <fragment
@@ -21,7 +21,7 @@
         android:name="py.edu.facitec.mymail.Fragments.DetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="4"
         tools:layout="@layout/fragment_details" />
 
 </LinearLayout>

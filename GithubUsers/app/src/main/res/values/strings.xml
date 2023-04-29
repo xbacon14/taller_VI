@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Github Users</string>
+    <string name="errorMsj">No se ha podido establecer una conexión con el servidor\n</string>
+</resources>

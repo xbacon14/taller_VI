@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login UI 2</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="login_now">Login now</string>
+    <string name="password">Password</string>
+</resources>

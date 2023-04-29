@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ModernLoginTutorial</string>
+    <string name="welcome_to_dynao">Welcome to Dynao</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis nulla sit amet laoreet lacinia. Duis at convallis erat. Duis arcu diam, tempus in metus a, vestibulum gravida ante. Nunc fringilla, mauris sed maximus tempor, purus nulla pellentesque sem, tristique congue velit tortor quis enim. Sed molestie sagittis neque sed semper. Donec erat massa, consectetur eget massa eget, tempor egestas leo. Curabitur gravida pulvinar.</string>
+    <string name="learn_more">Learn more</string>
+    <string name="join_the_club">Join the club</string>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Simple Pokedex</string>
+    <string name="errorMessage">Error trying consume api</string>
+    <string name="try_again">Try again</string>
+    <string name="end_point">https://leodufer.github.io/simple-pokedex</string>
+</resources>

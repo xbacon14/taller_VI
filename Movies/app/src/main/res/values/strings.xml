@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="try_again">Try again</string>
+    <string name="errorMessage">Error, we could not contact the server</string>
+</resources>

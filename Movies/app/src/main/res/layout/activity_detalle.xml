@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDetallePortada"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:contentDescription="image"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/textViewDetalleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Title"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDetallePortada" />
+
+    <TextView
+        android:id="@+id/textViewDetalleAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2012"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIconCalendar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewDetalleOriginalTitleData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Original title"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewDetalleOriginalTitleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleAge" />
+
+    <TextView
+        android:id="@+id/textViewDetalleOriginalTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="Original title:"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleAge"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewDetalleAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="7.7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewIconStar"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDetallePortada" />
+
+    <TextView
+        android:id="@+id/textViewDetalleVotesData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:text="2000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleAverage" />
+
+    <TextView
+        android:id="@+id/textViewDetalleVotesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Votos:"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDetalleVotesData"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleAverage" />
+
+    <TextView
+        android:id="@+id/textViewOverview"
+        android:layout_width="0dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis leo arcu. In non euismod risus, nec commodo ligula. Nulla sed ex lacinia, aliquam lacus ut, pulvinar neque. Ut ac quam enim. Curabitur egestas, turpis cursus vestibulum imperdiet, odio est fermentum elit, eu vulputate eros mauris vel lectus. Quisque auctor nisl a volutpat hendrerit. Mauris semper enim in scelerisque ultrices. Curabitur varius semper nunc non suscipit. Aliquam condimentum nunc sit amet scelerisque viverra. Aenean eget tristique metus. Nunc et nulla euismod dui porttitor sodales eu tempus leo. Nunc quis nibh facilisis, fringilla ipsum at, interdum nulla. Nullam sed placerat nulla. Etiam tristique dapibus diam ut suscipit. Sed a ultrices eros. Ut a dolor tortor."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleOriginalTitleLabel" />
+
+    <ImageView
+        android:id="@+id/imageViewIconCalendar"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalleTitle"
+        app:srcCompat="@drawable/round_calendar_today_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewIconStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDetallePortada"
+        app:srcCompat="@drawable/round_star_rate_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

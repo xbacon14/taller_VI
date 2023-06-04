@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">World Futball Clubb</string>
+    <string name="errorMessage">No se ha podido establecer conexión con la API</string>
+    <string name="try_again">Reintentar</string>
+    <string name="end_point">https://livescore-api.com</string>
+    <string name="key">key=HliwntsFmkCtu2L9</string>
+    <string name="secret">secret=16sCObJKlVVXV2mDnFaL9CqvX3Zs5KB7</string>
+</resources>

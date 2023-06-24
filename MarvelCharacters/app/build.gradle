@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'py.edu.facitec.worldfutballclubb'
+    namespace 'py.edu.facitec.marvelcharacters'
     compileSdk 33
 
     defaultConfig {
-        applicationId "py.edu.facitec.worldfutballclubb"
+        applicationId "py.edu.facitec.marvelcharacters"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -38,6 +38,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.squareup.retrofit:retrofit:1.9.0'
     implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'com.google.code.gson:gson:2.8.9'
-
+    implementation files('libs\\orm-datahelper.jar')
+    implementation files('libs\\ormlite-android-4.48.jar')
+    implementation files('libs\\ormlite-core-4.48.jar')
 }

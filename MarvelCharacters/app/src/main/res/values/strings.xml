@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Marvel Characters</string>
+    <string name="try_again">Reintentar</string>
+    <string name="errorMessage">No se ha podido establecer una comunicación con el servidor</string>
+</resources>

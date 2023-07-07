@@ -5,7 +5,7 @@ import com.j256.ormlite.field.DatabaseField;
 import java.util.Date;
 
 public class CharacterDto {
-    @DatabaseField(generatedId = false)
+    @DatabaseField(generatedId = true)
     private Long id;
     @DatabaseField
     private String nombre;

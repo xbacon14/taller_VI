@@ -3,7 +3,6 @@ package py.edu.facitec.marvelcharacters;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -40,14 +39,11 @@ public class MainActivity extends AppCompatActivity implements Callback<RestClie
         characterService = restAdapter.create(CharacterService.class);
         characterService.getCharacters(this);
 
-        characterListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Character c = (Character) parent.getAdapter().getItem(position);
-                Intent intent = new Intent(MainActivity.this, HeroActivity.class);
-                intent.putExtra("character", c);
-                startActivity(intent);
-            }
+        characterListView.setOnItemClickListener((parent, view, position, id) -> {
+            Character c = (Character) parent.getAdapter().getItem(position);
+            Intent intent = new Intent(MainActivity.this, HeroActivity.class);
+            intent.putExtra("character", c);
+            startActivity(intent);
         });
 
     }

@@ -44,4 +44,5 @@ dependencies {
     implementation files('libs\\orm-datahelper.jar')
     implementation files('libs\\ormlite-android-4.48.jar')
     implementation files('libs\\ormlite-core-4.48.jar')
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

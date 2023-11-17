@@ -17,10 +17,10 @@ import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
-public class MainActivity extends AppCompatActivity implements Callback<RestClientResponse> {
+    public class MainActivity extends AppCompatActivity implements Callback<RestClientResponse> {
 
-    ListView characterListView;
-    ProgressBar progressBar;
+        ListView characterListView;
+        ProgressBar progressBar;
     TextView errorTextView;
     Button reintentarButton;
     CharacterService characterService;

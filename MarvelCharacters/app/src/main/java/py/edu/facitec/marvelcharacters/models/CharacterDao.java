@@ -6,7 +6,7 @@ import py.edu.facitec.marvelcharacters.DBA;
 
 public class CharacterDao extends DBA<CharacterDto> {
 
-    public CharacterDao(Context context) {
+    ublic CharacterDao(Context context) {
         init(context, CharacterDto.class);
     }
-}
+}p
